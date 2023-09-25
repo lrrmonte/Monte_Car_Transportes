@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MonteCar_Transportes
+{
+    
+    public partial class Form1 : Form
+    {
+        double distancia, quilometragem_veic, qtde_litros_necessarios, preco_combustivel;
+        double vlr_total_combustivel, total_gastos, custo_pedagio;
+        double alimentacao, ajudante, total_frete, livre_motorista;
+        
+        private void bt_sair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bt_limpar_Click(object sender, EventArgs e)
+        {
+            tb_distancia.Clear();
+            tb_quilometragem_veic.Clear();
+            tb_preco_combustivel.Clear();
+            tb_pedagio.Clear();
+            tb_alimentacao.Clear();
+            tb_ajudante.Clear();
+            lb_litros_necessarios.ResetText();
+            lb_vlr_tot_combust.ResetText();
+            lb_tot_gastos.ResetText();
+            lb_frete_total.ResetText();
+            lb_ganho_motorista.ResetText();
+            tb_distancia.Focus();
+        }
+                       
+        public Form1()
+        {
+            InitializeComponent();
+            tb_distancia.Focus();
+        }
+
+        private void bt_calcular_Click(object sender, EventArgs e)
+        {
+            Converter();
+
+            qtde_litros_necessarios = distancia / quilometragem_veic;
+            vlr_total_combustivel = qtde_litros_necessarios * preco_combustivel;
+            total_gastos = vlr_total_combustivel * 3;
+            total_frete=total_gastos + custo_pedagio + alimentacao + ajudante;
+            livre_motorista = total_gastos - vlr_total_combustivel;
+
+            lb_litros_necessarios.Text = Math.Round(qtde_litros_necessarios, 2).ToString();
+            lb_vlr_tot_combust.Text=Math.Round(vlr_total_combustivel, 2).ToString();
+            lb_tot_gastos.Text=Math.Round(total_gastos,2).ToString();
+            lb_frete_total.Text = Math.Round(total_frete, 2).ToString();
+            lb_ganho_motorista.Text = Math.Round(livre_motorista, 2).ToString();
+
+        }
+
+        private void Converter()
+        {
+            try
+            {
+                distancia = double.Parse(tb_distancia.Text);
+                quilometragem_veic = double.Parse(tb_quilometragem_veic.Text);
+                preco_combustivel = double.Parse(tb_preco_combustivel.Text);
+                custo_pedagio = double.Parse(tb_pedagio.Text);
+                alimentacao = double.Parse(tb_alimentacao.Text);
+                ajudante = double.Parse(tb_ajudante.Text);
+            }
+            catch(Exception erro)
+            {
+                MessageBox.Show(erro.Message);
+            }
+        }
+
+    }
+}

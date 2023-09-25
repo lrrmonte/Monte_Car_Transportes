@@ -1,0 +1,11 @@
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\bin\Debug\MonteCar_Transportes.exe.config
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\bin\Debug\MonteCar_Transportes.exe
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\bin\Debug\MonteCar_Transportes.pdb
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.csproj.AssemblyReference.cache
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.csproj.SuggestedBindingRedirects.cache
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.Form1.resources
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.Properties.Resources.resources
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.csproj.GenerateResource.cache
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.csproj.CoreCompileInputs.cache
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.exe
+C:\Users\linco\OneDrive\Documentos\Projetos_C#\MonteCar_Transportes\MonteCar_Transportes\obj\Debug\MonteCar_Transportes.pdb
